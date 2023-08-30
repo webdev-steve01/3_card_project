@@ -1,0 +1,148 @@
+*,*::after, *::before{box-sizing: border-box;}
+
+body{
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  width: 60%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.content{
+  width: 100%;
+  padding: 1.5em 1em;
+  line-height: 30px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.box{
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  margin-bottom: 20%;
+  color: hsl(0, 0%, 95%);
+}
+
+.button{
+  text-align: center;
+  border: none ;
+  background-color: hsl(0, 0%, 95%);
+  margin-top: 40%;
+  width: 55%;
+  height: 2.2em;
+  border-radius: 50px;
+}
+
+.button a{
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.button:hover{
+  background-color: transparent;
+  color: black;
+  border: 1px solid white
+}
+
+/* individual styles for each column */
+#sedans{
+  background-color: hsl(31, 77%, 52%);
+}
+
+#suv{
+  background-color: hsl(184, 100%, 22%);
+}
+
+#lux{
+  background-color:  hsl(179, 100%, 13%);
+}
+
+/* * individual buttons text color */
+#first a{
+  padding-top: .2em;
+  color: hsl(31, 77%, 52%);
+}
+
+#first a:hover{
+  color: white;
+}
+
+#second a{
+  padding-top: .2em;
+  color: hsl(184, 100%, 22%);
+}
+
+#second a:hover{
+  color: white;
+}
+
+#third a{
+  padding-top: .2em;
+  color:hsl(179, 100%, 13%) ;
+}
+
+#third a:hover{
+  color: white;
+}
+
+/* media queries to improve responsive behavior, please don't change*/
+@media  screen and (max-width: 868px) {
+  .container{
+    width: 80%; 
+  }
+  .button{
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    display: block;
+    width: 65%;
+  }
+  .content{
+    border-radius: 10px;
+  }
+  .content + .content{
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container{
+    display: block;
+    width: 60%;
+  }
+  .content{
+    border-radius: 10px;
+  }
+  .content + .content{
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .container{
+    display: block;
+    width: 65%;
+  }
+  .content{
+    border-radius: 10px;
+  }
+  .content + .content{
+    margin-top: 10%;
+  }
+}
+
+
+

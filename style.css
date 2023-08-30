@@ -1,0 +1,31 @@
+*::after, *, *::before{box-sizing: border-box;}
+body{
+  margin: 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  width: 50%;
+  border: 1px solid black;
+  padding: 1em;
+  
+}
+.inner{   
+  border: 1px solid black;
+
+}
+.sedans, .suv, .luxury{
+  border: 1px solid black;
+  height: 100%;
+}
+.sedans{
+  width: 100%;
+}
+.luxury{
+  height: 100%;
+}
+.signup{
+  margin-top: 50%;
+}
